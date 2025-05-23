@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@400;700&display=swap");
 
 @tailwind base;
@@ -49,14 +50,9 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
-}
 
-@layer base {
-  * {
-    @apply border-border;
-  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground min-h-screen;
     font-family: "Inter", sans-serif;
   }
 }
@@ -75,12 +71,11 @@ body {
 }
 
 .media-carousel::-webkit-scrollbar-track {
-  background-color: #181818;
+  @apply bg-gray-800;
 }
 
 .media-carousel::-webkit-scrollbar-thumb {
-  background-color: #b81d24;
-  border-radius: 9999px;
+  @apply bg-red-600 rounded-full;
 }
 
 /* Animations */
